@@ -5,9 +5,11 @@ def second_challenge
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
   }
+  foods = []
 
-  #code your solution here!
-
+  groceries.each do |dept, item|
+    foods << groceries[dept]
+  end
   
-
+foods = foods.flatten
 end
